@@ -17,7 +17,7 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Checkout Repo
-        uses: actions/checkout@v2.3.2
+        uses: actions/checkout@v4
       - name: Install Dependencies
         run: npm install
       - name: Build
@@ -25,7 +25,7 @@ jobs:
           CI: false
         run: npm run build
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: build
           path: build
@@ -44,7 +44,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Checkout Repo
-        uses: actions/checkout@v2.3.2
+        uses: actions/checkout@v4
       - name: Download Artifact
         uses: actions/download-artifact@v2
         with:
