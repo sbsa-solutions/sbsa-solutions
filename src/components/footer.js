@@ -57,13 +57,27 @@ export function Footer() {
               <div className="col-lg-6 text-left text-lg-right">
                 <ul className="list-inline footer-socials">
                   <li className="list-inline-item">
-                    <Link to="https://www.facebook.com/sbsa">
+                    <Link
+                      to="https://www.facebook.com/profile.php?id=61567465980932"
+                      target="_blank"
+                    >
                       <i className="fab fa-facebook-f mr-2"></i>Facebook
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="https://twitter.com/sbsa">
-                      <i className="fab fa-twitter mr-2"></i>Twitter
+                    <Link
+                      to="https://www.youtube.com/@sbsa.solutions"
+                      target="_blank"
+                    >
+                      <i className="fab fa-youtube mr-2"></i>Youtube
+                    </Link>
+                  </li>
+                  <li className="list-inline-item">
+                    <Link
+                      to="https://www.instagram.com/sbsa.solutions/"
+                      target="_blank"
+                    >
+                      <i className="fab fa-instagram mr-2"></i>Instagram
                     </Link>
                   </li>
                 </ul>
