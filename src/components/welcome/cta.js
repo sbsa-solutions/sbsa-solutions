@@ -14,7 +14,7 @@ export function CTASection() {
                   Have any project on mind? For immidiate support :
                 </p>
                 <h3>
-                  <i className="ti-mobile mr-3 text-color"></i>+23 876 65 455
+                  <i className="ti-mobile mr-3 text-color"></i>+216 22 605 020
                 </h3>
               </div>
             </div>

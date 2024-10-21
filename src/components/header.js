@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export function Header() {
+  const location = useLocation();
   return (
     <>
       <header className="navigation">
@@ -9,9 +10,16 @@ export function Header() {
             <div className="row">
               <div className="col-lg-12">
                 <nav className="navbar navbar-expand-lg px-0 py-4">
-                  <Link className="navbar-brand" to="/">
+                  <NavLink
+                    className={
+                      location.pathname === "/" || location.pathname === ""
+                        ? "navbar-brand active"
+                        : "navbar-brand"
+                    }
+                    to="/"
+                  >
                     SBSA<span>Solutions.</span>
-                  </Link>
+                  </NavLink>
 
                   <button
                     className="navbar-toggler collapsed"
@@ -30,26 +38,50 @@ export function Header() {
                     id="navbarsExample09"
                   >
                     <ul className="navbar-nav ml-auto">
-                      <li className="nav-item">
-                        <Link className="nav-link" to="/">
+                      <li
+                        className={
+                          location.pathname === "/" || location.pathname === ""
+                            ? "nav-item active"
+                            : "nav-item"
+                        }
+                      >
+                        <NavLink className="nav-link" to="/">
                           Home
-                        </Link>
+                        </NavLink>
                       </li>
 
-                      <li className="nav-item @@service">
-                        <Link className="nav-link" to="/services">
+                      <li
+                        className={
+                          location.pathname === "/services"
+                            ? "nav-item active"
+                            : "nav-item"
+                        }
+                      >
+                        <NavLink className="nav-link" to="/services">
                           Services
-                        </Link>
+                        </NavLink>
                       </li>
-                      <li className="nav-item @@contact">
-                        <Link className="nav-link" to="/about">
+                      <li
+                        className={
+                          location.pathname === "/about"
+                            ? "nav-item active"
+                            : "nav-item"
+                        }
+                      >
+                        <NavLink className="nav-link" to="/about">
                           About
-                        </Link>
+                        </NavLink>
                       </li>
-                      <li className="nav-item @@contact">
-                        <Link className="nav-link" to="/contact">
+                      <li
+                        className={
+                          location.pathname === "/contact"
+                            ? "nav-item active"
+                            : "nav-item"
+                        }
+                      >
+                        <NavLink className="nav-link" to="/contact">
                           Contact
-                        </Link>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>

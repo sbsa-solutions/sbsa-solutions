@@ -19,36 +19,53 @@ body {
   color: rgba(0, 0, 0, 0.65);
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #242424;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 2rem;
   font-weight: 600;
   line-height: 42px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.3rem;
   line-height: 30px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1.25rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1rem;
 }
 
@@ -60,13 +77,19 @@ p {
   background: rgb(247, 87, 87);
 }
 
-input[type=email], input[type=password], input[type=text], input[type=tel] {
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
   box-shadow: none;
   height: 45px;
   outline: none;
   font-size: 14px;
 }
-input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=tel]:focus {
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus {
   box-shadow: none;
   border: 1px solid rgb(247, 87, 87);
 }
@@ -104,12 +127,16 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   box-shadow: none;
 }
 
-.btn-main, .btn-small, .btn-transparent {
+.btn-main,
+.btn-small,
+.btn-transparent {
   background: rgb(247, 87, 87);
   color: #fff;
   transition: all 0.2s ease;
 }
-.btn-main:hover, .btn-small:hover, .btn-transparent:hover {
+.btn-main:hover,
+.btn-small:hover,
+.btn-transparent:hover {
   background: #f52626;
   color: #fff;
 }
@@ -156,7 +183,9 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   border-radius: 50px;
 }
 
-.btn.active:focus, .btn:active:focus, .btn:focus {
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
   outline: 0;
 }
 
@@ -181,7 +210,11 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .bg-gradient {
-  background-image: linear-gradient(145deg, rgba(19, 177, 205, 0.95) 0%, rgba(152, 119, 234, 0.95) 100%);
+  background-image: linear-gradient(
+    145deg,
+    rgba(19, 177, 205, 0.95) 0%,
+    rgba(152, 119, 234, 0.95) 100%
+  );
   background-repeat: repeat-x;
 }
 
@@ -211,10 +244,18 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   letter-spacing: 1px;
 }
 
-.overly, .hero-img, .cta, .slider, .page-title {
+.overly,
+.hero-img,
+.cta,
+.slider,
+.page-title {
   position: relative;
 }
-.overly:before, .hero-img:before, .cta:before, .slider:before, .page-title:before {
+.overly:before,
+.hero-img:before,
+.cta:before,
+.slider:before,
+.page-title:before {
   content: "";
   position: absolute;
   left: 0;
@@ -227,10 +268,16 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   background: #000;
 }
 
-.overly-2, .latest-blog, .cta-block, .bg-counter {
+.overly-2,
+.latest-blog,
+.cta-block,
+.bg-counter {
   position: relative;
 }
-.overly-2:before, .latest-blog:before, .cta-block:before, .bg-counter:before {
+.overly-2:before,
+.latest-blog:before,
+.cta-block:before,
+.bg-counter:before {
   content: "";
   position: absolute;
   left: 0;
@@ -280,7 +327,8 @@ a {
   text-decoration: none;
 }
 
-a:focus, a:hover {
+a:focus,
+a:hover {
   color: rgb(247, 87, 87);
   text-decoration: none;
 }
@@ -391,9 +439,10 @@ a:focus {
   letter-spacing: 0.5px;
   transition: all 0.25s ease;
 }
-#navbar .nav-link:hover, #navbar .nav-link:focus,
+#navbar .nav-link:hover,
+#navbar .nav-link:focus,
 #navbar .active .nav-link {
-  color: rgb(247, 87, 87);
+  color: rgb(247, 87, 87) !important;
 }
 #navbar .btn {
   padding: 0.7rem 1.5rem 0.5rem;
@@ -530,7 +579,8 @@ ul.dropdown-menu li {
 
 @media (min-width: 992px) {
   .dropdown-menu {
-    transition: all 0.2s ease-in, visibility 0s linear 0.2s, transform 0.2s linear;
+    transition: all 0.2s ease-in, visibility 0s linear 0.2s,
+      transform 0.2s linear;
     display: block;
     visibility: hidden;
     opacity: 0;
@@ -544,7 +594,7 @@ ul.dropdown-menu li {
     margin-bottom: 10px;
   }
   .dropleft .dropdown-menu,
-.dropright .dropdown-menu {
+  .dropright .dropdown-menu {
     margin-top: -10px;
   }
   .dropdown:hover > .dropdown-menu {
@@ -696,7 +746,7 @@ ul.dropdown-menu li {
   text-align: center;
   transform: translateY(0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
@@ -757,7 +807,8 @@ ul.dropdown-menu li {
   padding-left: 65px;
 }
 
-.slick-slide:focus, .slick-slide a {
+.slick-slide:focus,
+.slick-slide a {
   outline: none;
 }
 
@@ -787,7 +838,7 @@ ul.dropdown-menu li {
 .pricing .btn-solid-border {
   border-color: #dedede;
 }
-.pricing .btn-solid-border:Hover {
+.pricing .btn-solid-border:hover {
   border-color: rgb(247, 87, 87);
 }
 
@@ -845,7 +896,7 @@ ul.dropdown-menu li {
 .contact-form-wrap .form-group .form-control {
   background: #f5f8f9;
   height: 48px;
-  border: 1px solid #EEF2F6;
+  border: 1px solid #eef2f6;
   box-shadow: none;
   width: 100%;
 }
@@ -855,7 +906,7 @@ ul.dropdown-menu li {
 .contact-form-wrap .form-group-2 textarea {
   background: #f5f8f9;
   height: 135px;
-  border: 1px solid #EEF2F6;
+  border: 1px solid #eef2f6;
   box-shadow: none;
   width: 100%;
 }
@@ -1164,16 +1215,21 @@ h3.quote::before {
 .comment-reply-form {
   margin-top: 80px;
 }
-.comment-reply-form input, .comment-reply-form textarea {
+.comment-reply-form input,
+.comment-reply-form textarea {
   height: 35px;
   border-radius: 0;
   box-shadow: none;
 }
-.comment-reply-form input:focus, .comment-reply-form textarea:focus {
+.comment-reply-form input:focus,
+.comment-reply-form textarea:focus {
   box-shadow: none;
   border: 1px solid rgb(247, 87, 87);
 }
-.comment-reply-form textarea, .comment-reply-form .btn-main, .comment-reply-form .btn-transparent, .comment-reply-form .btn-small {
+.comment-reply-form textarea,
+.comment-reply-form .btn-main,
+.comment-reply-form .btn-transparent,
+.comment-reply-form .btn-small {
   height: auto;
 }
 
@@ -1356,7 +1412,8 @@ h3.quote::before {
   .p-5 {
     padding: 2rem !important;
   }
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 36px;
@@ -1387,7 +1444,8 @@ h3.quote::before {
   .p-5 {
     padding: 2rem !important;
   }
-  h2, .h2 {
+  h2,
+  .h2 {
     font-size: 1.3rem;
     font-weight: 600;
     line-height: 36px;

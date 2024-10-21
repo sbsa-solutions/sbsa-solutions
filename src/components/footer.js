@@ -15,7 +15,7 @@ export function Footer() {
                     <Link to="/about">About</Link>
                   </li>
                   <li>
-                    <Link to="/service">Services</Link>
+                    <Link to="/services">Services</Link>
                   </li>
 
                   <li>
@@ -49,7 +49,9 @@ export function Footer() {
               <div className="col-lg-6">
                 <div className="copyright">
                   Copyright &copy; 2024, Developed by{" "}
-                  <Link to="https://sbsa.com/">SBSA Solutions.</Link>
+                  <Link to="https://sbsa.com/">
+                    SBSA<span className="text-color">Solutions.</span>
+                  </Link>
                 </div>
               </div>
               <div className="col-lg-6 text-left text-lg-right">
