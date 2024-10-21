@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function About() {
   return (
     <>
@@ -10,9 +12,9 @@ export function About() {
                 <h1 className="text-capitalize mb-4 text-lg">Our Company</h1>
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                    <a href="index.html" className="text-white">
+                    <Link to="index.html" className="text-white">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="list-inline-item">
                     <span className="text-white">/</span>
@@ -40,9 +42,9 @@ export function About() {
                   level. We optimize business processes, making them easier.
                 </p>
 
-                <a href="contact.html" className="btn btn-main btn-round-full">
+                <Link to="contact.html" className="btn btn-main btn-round-full">
                   Get started
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-6">
@@ -172,42 +174,45 @@ export function About() {
                   <div className="team-img-hover">
                     <ul className="team-social list-inline">
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/themefisher"
+                        <Link
+                          to="https://www.facebook.com/themefisher"
                           className="facebook"
                         >
                           <i
                             className="fab fa-facebook-f"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://twitter.com/themefisher"
+                        <Link
+                          to="https://twitter.com/themefisher"
                           className="twitter"
                         >
                           <i className="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/themefisher/"
+                        <Link
+                          to="https://www.instagram.com/themefisher/"
                           className="instagram"
                         >
                           <i
                             className="fab fa-instagram"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://themefisher.com/" className="linkedin">
+                        <Link
+                          to="https://themefisher.com/"
+                          className="linkedin"
+                        >
                           <i
                             className="fab fa-linkedin-in"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -231,42 +236,45 @@ export function About() {
                   <div className="team-img-hover">
                     <ul className="team-social list-inline">
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/themefisher"
+                        <Link
+                          to="https://www.facebook.com/themefisher"
                           className="facebook"
                         >
                           <i
                             className="fab fa-facebook-f"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://twitter.com/themefisher"
+                        <Link
+                          to="https://twitter.com/themefisher"
                           className="twitter"
                         >
                           <i className="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/themefisher/"
+                        <Link
+                          to="https://www.instagram.com/themefisher/"
                           className="instagram"
                         >
                           <i
                             className="fab fa-instagram"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://themefisher.com/" className="linkedin">
+                        <Link
+                          to="https://themefisher.com/"
+                          className="linkedin"
+                        >
                           <i
                             className="fab fa-linkedin-in"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -290,39 +298,39 @@ export function About() {
                   <div className="team-img-hover">
                     <ul className="team-social list-inline">
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/themefisher"
+                        <Link
+                          to="https://www.facebook.com/themefisher"
                           className="facebook"
                         >
                           <i
                             className="fab fa-facebook-f"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://twitter.com/sbsa" className="twitter">
+                        <Link to="https://twitter.com/sbsa" className="twitter">
                           <i className="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/sbsa/"
+                        <Link
+                          to="https://www.instagram.com/sbsa/"
                           className="instagram"
                         >
                           <i
                             className="fab fa-instagram"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://sbsa.com/" className="linkedin">
+                        <Link to="https://sbsa.com/" className="linkedin">
                           <i
                             className="fab fa-linkedin-in"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -345,39 +353,39 @@ export function About() {
                   <div className="team-img-hover">
                     <ul className="team-social list-inline">
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/sbsa"
+                        <Link
+                          to="https://www.facebook.com/sbsa"
                           className="facebook"
                         >
                           <i
                             className="fab fa-facebook-f"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://twitter.com/sbsa" className="twitter">
+                        <Link to="https://twitter.com/sbsa" className="twitter">
                           <i className="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/sbsa/"
+                        <Link
+                          to="https://www.instagram.com/sbsa/"
                           className="instagram"
                         >
                           <i
                             className="fab fa-instagram"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://sbsa.com/" className="linkedin">
+                        <Link to="https://sbsa.com/" className="linkedin">
                           <i
                             className="fab fa-linkedin-in"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -401,39 +409,42 @@ export function About() {
                   <div className="team-img-hover">
                     <ul className="team-social list-inline">
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/themefisher"
+                        <Link
+                          to="https://www.facebook.com/themefisher"
                           className="facebook"
                         >
                           <i
                             className="fab fa-facebook-f"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://twitter.com/sbsa" className="twitter">
+                        <Link to="https://twitter.com/sbsa" className="twitter">
                           <i className="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/sbsa/"
+                        <Link
+                          to="https://www.instagram.com/sbsa/"
                           className="instagram"
                         >
                           <i
                             className="fab fa-instagram"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://themefisher.com/" className="linkedin">
+                        <Link
+                          to="https://themefisher.com/"
+                          className="linkedin"
+                        >
                           <i
                             className="fab fa-linkedin-in"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -457,39 +468,42 @@ export function About() {
                   <div className="team-img-hover">
                     <ul className="team-social list-inline">
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.facebook.com/themefisher"
+                        <Link
+                          to="https://www.facebook.com/themefisher"
                           className="facebook"
                         >
                           <i
                             className="fab fa-facebook-f"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://twitter.com/sbsa" className="twitter">
+                        <Link to="https://twitter.com/sbsa" className="twitter">
                           <i className="fab fa-twitter" aria-hidden="true"></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a
-                          href="https://www.instagram.com/sbsa/"
+                        <Link
+                          to="https://www.instagram.com/sbsa/"
                           className="instagram"
                         >
                           <i
                             className="fab fa-instagram"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                       <li className="list-inline-item">
-                        <a href="https://themefisher.com/" className="linkedin">
+                        <Link
+                          to="https://themefisher.com/"
+                          className="linkedin"
+                        >
                           <i
                             className="fab fa-linkedin-in"
                             aria-hidden="true"
                           ></i>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>

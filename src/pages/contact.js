@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export function Contact() {
   return (
     <>
@@ -10,9 +11,9 @@ export function Contact() {
                 <h1 className="text-capitalize mb-4 text-lg">Get in Touch</h1>
                 <ul className="list-inline">
                   <li className="list-inline-item">
-                    <a href="index.html" className="text-white">
+                    <Link to="/" className="text-white">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="list-inline-item">
                     <span className="text-white">/</span>
@@ -91,19 +92,19 @@ export function Contact() {
 
                 <ul className="social-icons list-inline mt-5">
                   <li className="list-inline-item">
-                    <a href="http://www.sbsa.com">
+                    <Link to="http://www.sbsa.com">
                       <i className="fab fa-facebook-f"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <a href="http://www.sbsa.com">
+                    <Link to="http://www.sbsa.com">
                       <i className="fab fa-twitter"></i>
-                    </a>
+                    </Link>
                   </li>
                   <li className="list-inline-item">
-                    <a href="http://www.sbsa.com">
+                    <Link to="http://www.sbsa.com">
                       <i className="fab fa-linkedin-in"></i>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -112,15 +113,16 @@ export function Contact() {
         </div>
       </section>
 
-      <div className="google-map">
-        <div
-          id="map"
-          data-latitude="40.712776"
-          data-longitude="-74.005974"
-          data-marker="images/marker.png"
-          data-marker-name="Megakit"
-        ></div>
-      </div>
+      <iframe
+        title="Map "
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d353915.59848317626!2d9.382086100861715!3d36.80628515204911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m1!3e6!5e0!3m2!1sen!2stn!4v1729507432844!5m2!1sen!2stn"
+        width="100%"
+        height="450"
+        frameborder="0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </>
   );
 }
