@@ -1,13 +1,15 @@
 import { Outlet } from "react-router-dom";
 import { Footer } from "../components/footer";
 import { Header } from "../components/header";
+import { CommingSoon } from "../components/comming-soon";
 
 export function Layout() {
   return (
     <>
-      <Header></Header>
+      {/*<Header></Header>
       <Outlet />
-      <Footer></Footer>
+      <Footer></Footer>*/}
+      <CommingSoon />
     </>
   );
 }
