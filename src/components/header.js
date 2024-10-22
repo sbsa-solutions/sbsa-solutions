@@ -18,7 +18,7 @@ export function Header() {
                     }
                     to="/"
                   >
-                    SBSA Bilel<span>Solutions.</span>
+                    SBSA<span>Solutions.</span>
                   </NavLink>
 
                   <button
