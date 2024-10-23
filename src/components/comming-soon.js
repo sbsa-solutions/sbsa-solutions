@@ -40,7 +40,7 @@ export function CommingSoon() {
                     sbsa.business.solutions@gmail.com
                   </li>
                   <li>
-                    <i class="ti-mobile mr-3"></i>Phone:+216 22 605 020
+                    <i class="ti-mobile mr-3"></i>Phone: +216 22 605 020
                   </li>
                 </ul>
               </div>
