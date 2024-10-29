@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Services() {
   return (
     <>
@@ -154,9 +156,9 @@ export function Services() {
                 </h2>
               </div>
               <div className="col-lg-4 text-center text-lg-right mt-4 mt-lg-0">
-                <a href="contact.html" className="btn btn-main btn-round-full">
+                <Link to="/contact" className="btn btn-main btn-round-full">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>

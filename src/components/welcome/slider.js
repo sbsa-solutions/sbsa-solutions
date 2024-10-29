@@ -9,19 +9,22 @@ export function Slider() {
             <div className="col-lg-9 col-md-10">
               <div className="block">
                 <span className="d-block mb-3 text-white text-capitalize">
-                  Prepare for new future
+                  Creating the Future Together.
                 </span>
                 <h1 className="animated fadeInUp mb-5">
-                  Our work is <br />
-                  presentation of our <br />
+                  Our work is a
+                  <br />
+                  testament to our
+                  <br />
                   capabilities.
                 </h1>
                 <Link
-                  to="#"
+                  to="/services"
                   className="btn btn-main animated fadeInUp btn-round-full"
-                  aria-label="Get started"
+                  aria-label="Explore Our Services"
                 >
-                  Get started<i className="btn-icon fa fa-angle-right ml-2"></i>
+                  Explore Our Services
+                  <i className="btn-icon fa fa-angle-right ml-2"></i>
                 </Link>
               </div>
             </div>

@@ -7,11 +7,11 @@ export function Intro() {
             <div className="col-lg-8">
               <div className="section-title">
                 <span className="h6 text-color ">
-                  We are creative & expert people
+                  Innovative Solutions, Expertly Crafted.
                 </span>
                 <h2 className="mt-3 content-title">
-                  We work with business & provide solution to client with their
-                  business problem
+                  We provide solutions tailored to meet your unique business
+                  needs.
                 </h2>
               </div>
             </div>
@@ -20,30 +20,34 @@ export function Intro() {
             <div className="col-lg-4 col-md-6 col-12">
               <div className="intro-item mb-5 mb-lg-0">
                 <i className="ti-desktop color-one"></i>
-                <h4 className="mt-4 mb-3">Modern & Responsive design</h4>
+                <h4 className="mt-4 mb-3">Modern & Responsive Design</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Odit, ducimus.
+                  Crafted for today’s users, our designs are sleek, adaptive,
+                  and optimized to provide a seamless experience across all
+                  devices.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
               <div className="intro-item mb-5 mb-lg-0">
                 <i className="ti-medall color-one"></i>
-                <h4 className="mt-4 mb-3">Awarded licensed company</h4>
+                <h4 className="mt-4 mb-3">
+                  Proven Software Development Expertise
+                </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Odit, ducimus.
+                  Backed by years of experience, we deliver reliable,
+                  high-quality software solutions tailored to meet your business
+                  needs.
                 </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-12">
               <div className="intro-item">
                 <i className="ti-layers-alt color-one"></i>
-                <h4 className="mt-4 mb-3">Build your website Professionally</h4>
+                <h4 className="mt-4 mb-3">Professional Software Development</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Odit, ducimus.
+                  From concept to launch, we build solutions that are not only
+                  visually striking but also robust and user-focused.
                 </p>
               </div>
             </div>
