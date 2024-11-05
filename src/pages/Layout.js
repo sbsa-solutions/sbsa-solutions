@@ -6,6 +6,7 @@ import { CommingSoon } from "../components/comming-soon";
 import { useTranslation } from "react-i18next";
 // Data
 import data from "../data";
+import { Toast } from "react-bootstrap";
 export function Layout() {
   return (
     <>

@@ -3,7 +3,14 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { db } from "../firebase";
 import { collection, addDoc } from "firebase/firestore";
+import ToastNotification from "../components/ToastNotification";
+
 export function Contact() {
+  // toast fields
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
+  const [toastType, setToastType] = useState("success");
+  // form inputs
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -28,14 +35,23 @@ export function Contact() {
         email,
         message,
       });
-      alert("Message sent successfully!");
+
+      // If successful, set success message and type
+      setToastMessage("Message sent successfully!");
+      setToastType("success");
+
+      //alert("Message sent successfully!");
       setName("");
       setEmail("");
       setMessage("");
     } catch (error) {
       console.error("Error sending message: ", error);
-      alert("Error sending message, please try again.");
+      // alert("Error sending message, please try again.");
+      setToastMessage("Failed to send message. Please try again.");
+      setToastType("danger");
     }
+    setShowToast(true);
+    setTimeout(() => setShowToast(false), 3000);
   };
 
   return (
@@ -112,6 +128,12 @@ export function Contact() {
                   {t("send-message")}
                 </button>
               </form>
+              <ToastNotification
+                message={toastMessage}
+                show={showToast}
+                onClose={() => setShowToast(false)}
+                type={toastType}
+              />
             </div>
 
             <div className="col-lg-5 col-sm-12">
