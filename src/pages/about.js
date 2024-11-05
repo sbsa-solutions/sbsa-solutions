@@ -1,6 +1,19 @@
+import { useTranslation } from "react-i18next";
+import React, { useEffect } from "react";
+import i18next from "i18next";
 import { Link } from "react-router-dom";
 
 export function About() {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "about",
+  });
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <>
       <section className="page-title bg-1">
@@ -8,18 +21,22 @@ export function About() {
           <div className="row">
             <div className="col-md-12">
               <div className="block text-center">
-                <span className="text-white">About Us</span>
-                <h1 className="text-capitalize mb-4 text-lg">Our Company</h1>
+                <span className="text-white">{t("about-us")}</span>
+                <h1 className="text-capitalize mb-4 text-lg">
+                  {t("our-company")}
+                </h1>
                 <ul className="list-inline">
                   <li className="list-inline-item">
                     <Link to="/" className="text-white">
-                      Home
+                      {t("home")}
                     </Link>
                   </li>
                   <li className="list-inline-item">
                     <span className="text-white">/</span>
                   </li>
-                  <li className="list-inline-item text-white-50">About Us</li>
+                  <li className="list-inline-item text-white-50">
+                    {t("about-us")}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -32,18 +49,14 @@ export function About() {
           <div className="row">
             <div className="col-lg-6">
               <div className="about-item pr-3 mb-5 mb-lg-0">
-                <span className="h6 text-color">What we are</span>
+                <span className="h6 text-color">{t("what-are-we")}</span>
                 <h2 className="mt-3 mb-4 position-relative content-title">
-                  We are dynamic team of creative people
+                  {t("answer")}
                 </h2>
-                <p className="mb-5">
-                  We provide consulting services in the area of IFRS and
-                  management reporting, helping companies to reach their highest
-                  level. We optimize business processes, making them easier.
-                </p>
+                <p className="mb-5">{t("long-answer")}</p>
 
                 <Link to="/contact" className="btn btn-main btn-round-full">
-                  Get started
+                  {t("get-started")}
                 </Link>
               </div>
             </div>
@@ -67,39 +80,28 @@ export function About() {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="about-info-item mb-4 mb-lg-0">
                 <h3 className="mb-3">
-                  <span className="text-color mr-2 text-md ">01.</span>Our
-                  Mission
+                  <span className="text-color mr-2 text-md ">01.</span>
+                  {t("our-mission")}
                 </h3>
-                <p>
-                  llum similique ducimus accusamus laudantium praesentium,
-                  impedit quaerat, itaque maxime sunt deleniti voluptas
-                  distinctio .
-                </p>
+                <p>{t("our-mission-content")}</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="about-info-item mb-4 mb-lg-0">
                 <h3 className="mb-3">
-                  <span className="text-color mr-2 text-md">02.</span>Vission
+                  <span className="text-color mr-2 text-md">02.</span>
+                  {t("vission")}
                 </h3>
-                <p>
-                  llum similique ducimus accusamus laudantium praesentium,
-                  impedit quaerat, itaque maxime sunt deleniti voluptas
-                  distinctio .
-                </p>
+                <p>{t("vission-content")}</p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="about-info-item mb-4 mb-lg-0">
                 <h3 className="mb-3">
-                  <span className="text-color mr-2 text-md">03.</span>Our
-                  Approach
+                  <span className="text-color mr-2 text-md">03.</span>
+                  {t("our-approach")}
                 </h3>
-                <p>
-                  llum similique ducimus accusamus laudantium praesentium,
-                  impedit quaerat, itaque maxime sunt deleniti voluptas
-                  distinctio .
-                </p>
+                <p>{t("approach-content")}</p>
               </div>
             </div>
           </div>
@@ -113,120 +115,36 @@ export function About() {
               <div className="counter-item text-center mb-5 mb-lg-0">
                 <i className="ti-check color-one text-md"></i>
                 <h3 className="mt-2 mb-0 text-white">
-                  <span className="counter-stat font-weight-bold">1730</span> +
+                  <span className="counter-stat font-weight-bold">28</span> +
                 </h3>
-                <p className="text-white-50">Project Done</p>
+                <p className="text-white-50">{t("projects")}</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="counter-item text-center mb-5 mb-lg-0">
-                <i className="ti-flag color-one text-md"></i>
+                <i className="ti-user color-one text-md"></i>
                 <h3 className="mt-2 mb-0 text-white">
-                  <span className="counter-stat font-weight-bold">125 </span>M{" "}
+                  <span className="counter-stat font-weight-bold">19 </span>+{" "}
                 </h3>
-                <p className="text-white-50">User Worldwide</p>
+                <p className="text-white-50">{t("clients")}</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="counter-item text-center mb-5 mb-lg-0">
-                <i className="ti-layers color-one text-md"></i>
+                <i className="ti-timer color-one text-md"></i>
                 <h3 className="mt-2 mb-0 text-white">
-                  <span className="counter-stat font-weight-bold">39</span>
+                  <span className="counter-stat font-weight-bold">5</span>+
                 </h3>
-                <p className="text-white-50">Availble Country</p>
+                <p className="text-white-50">{t("years")}</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="counter-item text-center">
-                <i className="ti-medall color-one  text-md"></i>
+                <i className="ti-briefcase color-one  text-md"></i>
                 <h3 className="mt-2 mb-0 text-white">
-                  <span className="counter-stat font-weight-bold">14</span>
+                  <span className="counter-stat font-weight-bold">6</span>+
                 </h3>
-                <p className="text-white-50">Award Winner </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section testimonial bg-gray">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-7 text-center">
-              <div className="section-title">
-                <span className="h6 text-color">Clients testimonial</span>
-                <h2 className="mt-3 content-title">
-                  Check what's our clients say about us
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container">
-          <div className="testimonial-wrap">
-            <div className="testimonial-item position-relative">
-              <i className="ti-quote-left text-color"></i>
-
-              <div className="testimonial-item-content">
-                <p className="testimonial-text">
-                  Quam maiores perspiciatis temporibus odio reiciendis error
-                  alias debitis atque consequuntur natus iusto recusandae
-                  numquam corrupti facilis blanditiis.
-                </p>
-
-                <div className="testimonial-author">
-                  <h5 className="mb-0 text-capitalize">Thomas Johnson</h5>
-                  <p>Excutive Director,SBSA Solutions</p>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-item position-relative">
-              <i className="ti-quote-left text-color"></i>
-
-              <div className="testimonial-item-content">
-                <p className="testimonial-text">
-                  Consectetur adipisicing elit. Quam maiores perspiciatis
-                  temporibus odio reiciendis error alias debitis atque
-                  consequuntur natus iusto recusandae .
-                </p>
-
-                <div className="testimonial-author">
-                  <h5 className="mb-0 text-capitalize">Mickel hussy</h5>
-                  <p>Excutive Director,SBSA Solutions</p>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-item position-relative">
-              <i className="ti-quote-left text-color"></i>
-
-              <div className="testimonial-item-content">
-                <p className="testimonial-text">
-                  Quam maiores perspiciatis temporibus odio reiciendis error
-                  alias debitis atque consequuntur natus iusto recusandae
-                  numquam corrupti.
-                </p>
-
-                <div className="testimonial-author">
-                  <h5 className="mb-0 text-capitalize">James Watson</h5>
-                  <p>Excutive Director,SBSA Solutions</p>
-                </div>
-              </div>
-            </div>
-            <div className="testimonial-item position-relative">
-              <i className="ti-quote-left text-color"></i>
-
-              <div className="testimonial-item-content">
-                <p className="testimonial-text">
-                  Consectetur adipisicing elit. Quam maiores perspiciatis
-                  temporibus odio reiciendis error alias debitis atque
-                  consequuntur natus iusto recusandae .
-                </p>
-
-                <div className="testimonial-author">
-                  <h5 className="mb-0 text-capitalize">Mickel hussy</h5>
-                  <p>Excutive Director,SBSA Solutions</p>
-                </div>
+                <p className="text-white-50">{t("team")} </p>
               </div>
             </div>
           </div>

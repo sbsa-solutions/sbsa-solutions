@@ -1,0 +1,138 @@
+{
+  "welcome": {
+    "slider": {
+      "title": "Solutions innovantes, conçues avec expertise.",
+      "description": "Nous fournissons des solutions adaptées à vos besoins commerciaux uniques.",
+      "explore": "Explorez nos services"
+    },
+    "testimonial": {
+      "title": "Pour tous types d'entreprises",
+      "description": "Confiez votre projet à notre meilleure équipe de professionnels",
+      "contact": "Contactez-nous"
+    },
+    "services": {
+      "title": "Nos services",
+      "description": "Des solutions complètes et créatives",
+      "web-service": "Développement web",
+      "web-service-description": "Des solutions web sur mesure qui renforcent votre présence en ligne et stimulent la croissance de votre entreprise grâce à des designs réactifs et conviviaux.",
+      "interface-service": "Conception d'interface",
+      "interface-service-description": "Création d'interfaces utilisateur intuitives et engageantes qui privilégient l'ergonomie, garantissant une expérience fluide pour votre public.",
+      "business-service": "Conseil aux entreprises",
+      "business-service-description": " Des insights et des solutions stratégiques pour optimiser vos opérations, vous aidant à naviguer dans le paysage numérique et à atteindre vos objectifs commerciaux.",
+      "Branding-service": "Branding ",
+      "Branding-service-description": "Développement d'une identité de marque forte et cohérente qui résonne avec votre public cible et vous différencie sur le marché.",
+      "app-development-service": "Développement d'applications",
+      "app-development-service-description": "Des applications mobiles et web innovantes conçues pour répondre à vos besoins commerciaux, en mettant l'accent sur l'engagement des utilisateurs et la fonctionnalité ",
+      "content-service": "Création de contenu",
+      "content-service-description": "Production de contenu de haute qualité et engageant qui raconte l'histoire de votre marque et se connecte avec votre public sur diverses plateformes."
+    },
+    "intro": {
+      "title": "Solutions innovantes, élaborées avec expertise",
+      "description": "Nous fournissons des solutions adaptées à vos besoins commerciaux uniques.",
+      "title-1": "Design moderne et réactif",
+      "description-1": "Conçues pour répondre aux besoins des utilisateurs, nos designs allient élégance et adaptabilité, et sont optimisés pour garantir une expérience fluide sur tous les appareils",
+      "title-2": "Expertise en développement de logiciels éprouvée",
+      "description-2": " Forts de plusieurs années d'expérience, nous proposons des solutions logicielles fiables et de haute qualité, adaptées à vos besoins commerciaux.",
+      "title-3": "Développement de logiciels professionnel",
+      "description-3": " De la conception au lancement, nous construisons des solutions qui sont non seulement visuellement frappantes, mais aussi robustes et centrées sur l'utilisateur."
+    },
+    "cta": {
+      "title": "Nous concevons pour vous",
+      "sub-title": "Devenez partenaire avec nos professionnels qualifiés",
+      "description-1": "Vous avez un projet en tête ? Laissez notre équipe talentueuse transformer vos idées en réalité.",
+      "description-2": " Pour une assistance rapide, contactez-nous dès maintenant !"
+    },
+    "counter": {
+      "title": "Pourquoi compter sur SBSA Solutions ?",
+      "projects-done": "Projets terminés",
+      "clients": "Clients",
+      "years": "Années d'activité",
+      "team": "Ingénieurs expérimentés"
+    },
+    "about": {
+      "what-are-we": "Qui sommes-nous",
+      "answer": "Esprits innovants, esprit de collaboration",
+      "about-content-title": "Votre partenaire en développement de logiciels",
+      "about-content-description": " Nous fournissons des conseils d'experts en conception et développement de logiciels, aidant les entreprises à optimiser leurs processus et à atteindre l'excellence opérationnelle grâce à des solutions technologiques sur mesure.",
+      "get-started": "Commencez dès maintenant"
+    }
+  },
+  "footer": {
+    "quick-links": "Liens rapides",
+    "about": "À propos",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "Droits d'auteur",
+    "developed-by": "2024, Développé par"
+  },
+  "header": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos de nous",
+    "contact": "Contact"
+  },
+  "about": {
+    "about-us": "À propos de nous",
+    "our-company": "Notre équipe",
+    "home": "Accueil",
+    "what-are-we": "Qui sommes-nous",
+    "answer": " Nous sommes une équipe dynamique de professionnels innovants.",
+    "long-answer": " Nous fournissons des solutions sur mesure conçues pour répondre aux besoins uniques de nos clients, en combinant créativité et expertise pour offrir des résultats exceptionnels. Notre équipe s'engage à optimiser les processus commerciaux, à améliorer l'efficacité et à permettre aux entreprises d'atteindre de nouveaux sommets grâce à des stratégies innovantes et des conseils ciblés.",
+    "get-started": " Commencez maintenant",
+    "our-mission": "Notre mission",
+    "our-mission-content": "Notre objectif est de renforcer les entreprises en fournissant des solutions logicielles innovantes qui favorisent le succès et inspirent la croissance. Notre mission est de concevoir des logiciels fiables et percutants qui répondent aux besoins uniques de chaque client, en transformant leur vision en réalité.",
+    "vission": "Notre vision",
+    "vission-content": "Être un leader dans l'industrie du logiciel, reconnu pour l'excellence en créativité, qualité et satisfaction client. Nous envisageons un avenir où la technologie et l'innovation élèvent les entreprises à de nouveaux sommets, ayant un impact positif dans le monde numérique.",
+    "our-approach": "Notre approche",
+    "approach-content": " Nous adoptons une approche centrée sur le client, en travaillant en étroite collaboration avec vous, de la conception initiale à la livraison finale. Notre méthode combine une technologie de pointe, des pratiques de développement agile et un engagement envers la collaboration, garantissant des solutions sur mesure qui répondent et dépassent les attentes.",
+    "projects": "Projets réalisés",
+    "clients": "Clients",
+    "years": "Années d'activité",
+    "team": "Ingénieurs expérimentés"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "get-touch": "Nous contacter",
+    "home": "Accueil",
+    "contact-us": "Contactez-nous",
+    "contact-form": "Formulaire de contact",
+    "send-message": "Envoyer un message",
+    "professionals-title": "Nous sommes des professionnels",
+    "professionals-description": "N'hésitez pas à nous contacter pour toute information",
+    "location": "Tunis, Tunisie",
+    "phone": "Téléphone",
+    "your-name": "Votre nom",
+    "email": "Adresse e-mail",
+    "your-message": "Votre message"
+  },
+  "services": {
+    "title": "Nos services",
+    "what-we-do": "Nos activités",
+    "home": "Accueil",
+    "our-services": "Nos services",
+    "our-services-description": "Nous proposons un large éventail de services créatifs.",
+    "web-dev": "Développement web ",
+    "web-dev-description": "Solutions web sur mesure qui améliorent votre présence en ligne et stimulent la croissance de votre entreprise grâce à des designs réactifs et conviviaux.",
+    "interface-design": "Conception d'interface",
+    "interface-design-desc": " Création d'interfaces utilisateur intuitives et engageantes qui privilégient l'utilisabilité, garantissant une expérience fluide pour votre audience.",
+    "business-consulting": "Conseil aux entreprises",
+    "business-consulting-desc": "Perspectives stratégiques et solutions pour optimiser vos opérations, vous aidant à naviguer dans le paysage numérique et à atteindre vos objectifs commerciaux.",
+    "branding": "Création de marque",
+    "branding-desc": "Développer une identité de marque forte et cohérente qui résonne avec votre public cible et vous distingue sur le marché.",
+    "app-dev": "Développement d'applications",
+    "app-dev-desc": "Applications de bureau, mobiles et web innovantes conçues pour répondre à vos besoins commerciaux, en mettant l'accent sur l'engagement des utilisateurs et la fonctionnalité.",
+    "content-creation": "Création de contenu",
+    "content-creation-desc": "Produire un contenu de haute qualité et engageant qui raconte l'histoire de votre marque et se connecte avec votre public sur diverses plateformes.",
+    "every-business": "Pour tous les types d'activité",
+    "entrust-project": " Confiez votre projet à notre meilleure équipe de professionnels.",
+    "contact-us": "Contactez-nous"
+  },
+  "comming": {
+    "coming-soon": "Bientôt disponible",
+    "coming-soon-desc": "Nous travaillons actuellement sur un nouveau site web super génial.",
+    "professionals": "Nous sommes des professionnels",
+    "professionals-desc": "N'hésitez pas à nous contacter pour toute information.",
+    "location": "Tunis, Tunisie",
+    "phone": "Téléphone"
+  }
+}

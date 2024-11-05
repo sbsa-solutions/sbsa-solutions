@@ -1,3 +1,4 @@
+import React from "react";
 import { Slider } from "../components/welcome/slider";
 import { Intro } from "../components/welcome/intro";
 import { AboutSection } from "../components/welcome/about";

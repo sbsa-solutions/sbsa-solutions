@@ -1,6 +1,11 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 export function Footer() {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "footer",
+  });
   return (
     <>
       <footer className="footer section">
@@ -8,18 +13,18 @@ export function Footer() {
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="widget">
-                <h4 className="text-capitalize mb-4">Quick Links</h4>
+                <h4 className="text-capitalize mb-4">{t("quick-links")}</h4>
 
                 <ul className="list-unstyled footer-menu lh-35">
                   <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about">{t("about")}</Link>
                   </li>
                   <li>
-                    <Link to="/services">Services</Link>
+                    <Link to="/services">{t("services")}</Link>
                   </li>
 
                   <li>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/contact">{t("contact")}</Link>
                   </li>
                 </ul>
               </div>
@@ -29,7 +34,7 @@ export function Footer() {
               <div className="widget">
                 <div className="logo mb-4">
                   <h3>
-                    SBSA<span>Solutions.</span>
+                    SBSA<span>Solutions</span>
                   </h3>
                 </div>
                 <h6>
@@ -48,8 +53,8 @@ export function Footer() {
             <div className="row">
               <div className="col-lg-6">
                 <div className="copyright">
-                  Copyright &copy; 2024, Developed by{" "}
-                  <Link to="https://sbsa.com/">
+                  {t("copyright")} &copy; {t("developed-by")}
+                  <Link to="https://sbsa-solutions.web.app/">
                     SBSA<span className="text-color">Solutions.</span>
                   </Link>
                 </div>

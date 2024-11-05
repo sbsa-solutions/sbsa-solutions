@@ -1,3 +1,4 @@
+import React, { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import { Layout } from "./pages/Layout";
@@ -7,7 +8,7 @@ import { Services } from "./pages/services";
 import { Contact } from "./pages/contact";
 import { About } from "./pages/about";
 import NoPage from "./components/NoPage";
-
+import "./i18n";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,5 +35,9 @@ const router = createBrowserRouter([
 ]);
 
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} fallbackElement={<>Loading...</>} />
+    </>
+  );
 }

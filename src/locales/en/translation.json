@@ -1,0 +1,138 @@
+{
+  "welcome": {
+    "slider": {
+      "title": "Creating the Future Together.",
+      "description": " We provide solutions tailored to meet your unique business needs.",
+      "explore": "Explore Our Services"
+    },
+    "testimonial": {
+      "title": "For Every type business",
+      "description": "Entrust Your Project to Our Best Team of Professionals",
+      "contact": "Contact Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "Comprehensive and Creative Solutions",
+      "web-service": "Web development.",
+      "web-service-description": "Tailored web solutions that enhance your online presence and drive business growth through responsive and user-friendly designs.",
+      "interface-service": "Interface Design.",
+      "interface-service-description": "Creating intuitive and engaging user interfaces that prioritize usability, ensuring a seamless experience for your audience.",
+      "business-service": "Business Consulting.",
+      "business-service-description": " Strategic insights and solutions to optimize your operations, helping you navigate the digital landscape and achieve your business goals.",
+      "Branding-service": "Branding.",
+      "Branding-service-description": "Developing a strong, cohesive brand identity that resonates with your target audience and differentiates you in the marketplace.",
+      "app-development-service": "App development.",
+      "app-development-service-description": "Innovative mobile and web applications designed to meet your business needs, with a focus on user engagement and functionality.",
+      "content-service": "Content creation.",
+      "content-service-description": "Producing high-quality, engaging content that tells your brand's story and connects with your audience across various platforms."
+    },
+    "intro": {
+      "title": "Innovative Solutions, Expertly Crafted.",
+      "description": "We provide solutions tailored to meet your unique business needs.",
+      "title-1": "Modern & Responsive Design",
+      "description-1": "Crafted for today’s users, our designs are sleek, adaptive, and optimized to provide a seamless experience across all devices.",
+      "title-2": "Proven Software Development Expertise",
+      "description-2": "Backed by years of experience, we deliver reliable,high-quality software solutions tailored to meet your business needs.",
+      "title-3": "Professional Software Development",
+      "description-3": "From concept to launch, we build solutions that are not only visually striking but also robust and user-focused."
+    },
+    "cta": {
+      "title": "We create for you",
+      "sub-title": "Partner with Our Skilled Professionals",
+      "description-1": "Got a project in mind? Let our talented team turn your ideas into reality.",
+      "description-2": "For prompt assistance, contact us now!"
+    },
+    "counter": {
+      "title": "Why rely on SBSA Solutions?",
+      "projects-done": "Project Done",
+      "clients": "Clients",
+      "years": "Years in business",
+      "team": "Experienced engineers"
+    },
+    "about": {
+      "what-are-we": "What we are",
+      "answer": "Innovative Minds, Collaborative Spirit",
+      "about-content-title": "Your Software Development Partner",
+      "about-content-description": " We provide expert consulting in software design and development, helping companies optimize their processes and achieve operational excellence through tailored technology solutions.",
+      "get-started": "Get started"
+    }
+  },
+  "footer": {
+    "quick-links": "Quick Links",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "Copyright",
+    "developed-by": "2024, Developed by"
+  },
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "about": {
+    "about-us": "About Us",
+    "our-company": "Our Team",
+    "home": "Home",
+    "what-are-we": "What we are",
+    "answer": "We’re a vibrant team of innovative professionals.",
+    "long-answer": " We provide tailored solutions designed to meet the unique needs of our clients, combining creativity and expertise to deliver exceptional results. Our team is dedicated to optimizing business processes, enhancing efficiency, and empowering companies to reach new heights through innovative strategies and focused consulting.",
+    "get-started": " Get started",
+    "our-mission": "Our Mission",
+    "our-mission-content": "We aim to empower businesses by delivering innovative software solutions that drive success and inspire growth. Our mission is to craft impactful, reliable software that meets the unique needs of each client, transforming their vision into reality.",
+    "vission": "Vission",
+    "vission-content": "To be a leader in the software industry, known for excellence in creativity, quality, and customer satisfaction. We envision a future where technology and innovation elevate businesses to new heights, making a positive impact in the digital world.",
+    "our-approach": "Our Approach",
+    "approach-content": " We take a client-centered approach, working closely with you from initial concept to final delivery. Our method combines cutting-edge technology, agile development practices, and a commitment to collaboration, ensuring tailored solutions that meet and exceed expectations.",
+    "projects": "Projects Done",
+    "clients": "Clients",
+    "years": "Years in business",
+    "team": "Experienced engineers"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "get-touch": "Get in Touch",
+    "home": "Home",
+    "contact-us": "Contact Us",
+    "contact-form": "Contact Form",
+    "send-message": "Send Message",
+    "professionals-title": "We are Professionals",
+    "professionals-description": "Don’t Hesitate to contact with us for any kind of information",
+    "location": "Tunis, Tunisia",
+    "phone": "Phone",
+    "your-name": "Your Name",
+    "email": "Email Address",
+    "your-message": "Your Message"
+  },
+  "services": {
+    "title": "Our services",
+    "what-we-do": "What We Do",
+    "home": "Home",
+    "our-services": "Our services",
+    "our-services-description": "We deliver a broad spectrum of creative services.",
+    "web-dev": "Web development.",
+    "web-dev-description": " Tailored web solutions that enhance your online presence and drive business growth through responsive and user-friendly designs.",
+    "interface-design": "Interface Design.",
+    "interface-design-desc": " Creating intuitive and engaging user interfaces that prioritize usability, ensuring a seamless experience for your audience.",
+    "business-consulting": "Business Consulting.",
+    "business-consulting-desc": "Strategic insights and solutions to optimize your operations, helping you navigate the digital landscape and achieve your business goals.",
+    "branding": "Branding.",
+    "branding-desc": "Developing a strong, cohesive brand identity that resonates with your target audience and differentiates you in the marketplace.",
+    "app-dev": "App development.",
+    "app-dev-desc": "Innovative desktop, mobile and web applications designed to meet your business needs, with a focus on user engagement and functionality.",
+    "content-creation": "Content creation.",
+    "content-creation-desc": "Producing high-quality, engaging content that tells your brand's story and connects with your audience across various platforms.",
+    "every-business": "For Every Type of Activities",
+    "entrust-project": "Entrust Your Project to Our Best Team of Professionals",
+    "contact-us": "Contact Us"
+  },
+  "comming": {
+    "coming-soon": "Coming soon",
+    "coming-soon-desc": "We are currently working on a new super awesome website.",
+    "professionals": "We are Professionals",
+    "professionals-desc": " Don’t Hesitate to contact with us for any kind of information",
+    "location": "Tunis, Tunisia",
+    "phone": "Phone"
+  }
+}

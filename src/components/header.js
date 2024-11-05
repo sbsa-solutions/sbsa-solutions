@@ -1,7 +1,14 @@
+import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import SwitchLang from "./header/SwitchLang";
+import { useTranslation } from "react-i18next";
+import "./header/header.css";
 
 export function Header() {
   const location = useLocation();
+  const { t } = useTranslation("translation", {
+    keyPrefix: "header",
+  });
   return (
     <>
       <header className="navigation">
@@ -9,7 +16,7 @@ export function Header() {
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
-                <nav className="navbar navbar-expand-lg px-0 py-4">
+                <nav className="navbar navbar-expand-lg px-0 py-4 sticky-top ">
                   <NavLink
                     className={
                       location.pathname === "/" || location.pathname === ""
@@ -46,7 +53,7 @@ export function Header() {
                         }
                       >
                         <NavLink className="nav-link" to="/">
-                          Home
+                          {t("home")}
                         </NavLink>
                       </li>
 
@@ -58,9 +65,10 @@ export function Header() {
                         }
                       >
                         <NavLink className="nav-link" to="/services">
-                          Services
+                          {t("services")}
                         </NavLink>
                       </li>
+
                       <li
                         className={
                           location.pathname === "/about"
@@ -69,7 +77,7 @@ export function Header() {
                         }
                       >
                         <NavLink className="nav-link" to="/about">
-                          About
+                          {t("about")}
                         </NavLink>
                       </li>
                       <li
@@ -80,10 +88,12 @@ export function Header() {
                         }
                       >
                         <NavLink className="nav-link" to="/contact">
-                          Contact
+                          {t("contact")}
                         </NavLink>
                       </li>
                     </ul>
+
+                    <SwitchLang />
                   </div>
                 </nav>
               </div>

@@ -1,5 +1,43 @@
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { db } from "../firebase";
+import { collection, addDoc } from "firebase/firestore";
 export function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const { t } = useTranslation("translation", {
+    keyPrefix: "contact",
+  });
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      await addDoc(collection(db, "contacts"), {
+        name,
+        email,
+        message,
+      });
+      alert("Message sent successfully!");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (error) {
+      console.error("Error sending message: ", error);
+      alert("Error sending message, please try again.");
+    }
+  };
+
   return (
     <>
       <section className="page-title bg-1">
@@ -7,18 +45,22 @@ export function Contact() {
           <div className="row">
             <div className="col-md-12">
               <div className="block text-center">
-                <span className="text-white">Contact Us</span>
-                <h1 className="text-capitalize mb-4 text-lg">Get in Touch</h1>
+                <span className="text-white">{t("title")}</span>
+                <h1 className="text-capitalize mb-4 text-lg">
+                  {t("get-touch")}
+                </h1>
                 <ul className="list-inline">
                   <li className="list-inline-item">
                     <Link to="/" className="text-white">
-                      Home
+                      {t("home")}
                     </Link>
                   </li>
                   <li className="list-inline-item">
                     <span className="text-white">/</span>
                   </li>
-                  <li className="list-inline-item text-white-50">Contact Us</li>
+                  <li className="list-inline-item text-white-50">
+                    {t("contact-us")}
+                  </li>
                 </ul>
               </div>
             </div>
@@ -33,77 +75,88 @@ export function Contact() {
               <form
                 id="contact-form"
                 className="contact__form"
-                method="post"
-                action="index.html"
+                onSubmit={handleSubmit}
               >
-                <h3 className="text-md mb-4">Contact Form</h3>
+                <h3 className="text-md mb-4">{t("contact-form")}</h3>
                 <div className="form-group">
                   <input
-                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     type="text"
                     className="form-control"
-                    placeholder="Your Name"
+                    placeholder={t("your-name")}
                     required
                   />
                 </div>
                 <div className="form-group">
                   <input
-                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     className="form-control"
-                    placeholder="Email Address"
+                    placeholder={t("email")}
                     required
                   />
                 </div>
                 <div className="form-group-2 mb-4">
                   <textarea
-                    name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     className="form-control"
                     rows="4"
-                    placeholder="Your Message"
+                    placeholder={t("your-message")}
                     required
                   ></textarea>
                 </div>
-                <button className="btn btn-main" name="submit" type="submit">
-                  Send Message
+                <button className="btn btn-main" type="submit">
+                  {t("send-message")}
                 </button>
               </form>
             </div>
 
             <div className="col-lg-5 col-sm-12">
               <div className="contact-content pl-lg-5 mt-5 mt-lg-0">
-                <span className="text-muted">We are Professionals</span>
-                <h2 className="mb-5 mt-2">
-                  Don’t Hesitate to contact with us for any kind of information
-                </h2>
+                <span className="text-muted">{t("professionals-title")}</span>
+                <h2 className="mb-5 mt-2">{t("professionals-description")}</h2>
 
                 <ul className="address-block list-unstyled">
                   <li>
-                    <i className="ti-direction mr-3"></i>Tunis, Tunisia
+                    <i className="ti-direction mr-3"></i>
+                    {t("location")}
                   </li>
                   <li>
-                    <i className="ti-email mr-3"></i>Email:
+                    <i className="ti-email mr-3"></i>
                     sbsa.business.solutions@gmail.com
                   </li>
                   <li>
-                    <i className="ti-mobile mr-3"></i>Phone:+216 22 605 020
+                    <i className="ti-mobile mr-3"></i>
+                    +216 22 605 020
                   </li>
                 </ul>
 
                 <ul className="social-icons list-inline mt-5">
                   <li className="list-inline-item">
-                    <Link to="http://www.sbsa.com">
+                    <Link
+                      to="https://www.facebook.com/profile.php?id=61567465980932"
+                      target="_blank"
+                    >
                       <i className="fab fa-facebook-f"></i>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="http://www.sbsa.com">
-                      <i className="fab fa-twitter"></i>
+                    <Link
+                      to="https://www.instagram.com/sbsa.solutions/"
+                      target="_blank"
+                    >
+                      <i className="fab fa-instagram"></i>
                     </Link>
                   </li>
                   <li className="list-inline-item">
-                    <Link to="http://www.sbsa.com">
-                      <i className="fab fa-linkedin-in"></i>
+                    <Link
+                      to="https://www.youtube.com/@sbsa.solutions"
+                      target="_blank"
+                    >
+                      <i className="fab fa-youtube"></i>
                     </Link>
                   </li>
                 </ul>

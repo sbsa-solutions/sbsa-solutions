@@ -1,4 +1,9 @@
+import React from "react";
+import { useTranslation } from "react-i18next";
 export function ServicesSection() {
+  const { t } = useTranslation("translation", {
+    keyPrefix: "welcome.services",
+  });
   return (
     <>
       <section className="section service border-top">
@@ -6,10 +11,8 @@ export function ServicesSection() {
           <div className="row justify-content-center">
             <div className="col-lg-7 text-center">
               <div className="section-title">
-                <span className="h6 text-color">Our Services</span>
-                <h2 className="mt-3 content-title ">
-                  Comprehensive and Creative Solutions{" "}
-                </h2>
+                <span className="h6 text-color">{t("title")}</span>
+                <h2 className="mt-3 content-title ">{t("description")}</h2>
               </div>
             </div>
           </div>
@@ -18,72 +21,48 @@ export function ServicesSection() {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="service-item mb-5">
                 <i className="ti-desktop"></i>
-                <h4 className="mb-3">Web development.</h4>
-                <p>
-                  Tailored web solutions that enhance your online presence and
-                  drive business growth through responsive and user-friendly
-                  designs.
-                </p>
+                <h4 className="mb-3">{t("web-service")}</h4>
+                <p>{t("web-service-description")}</p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="service-item mb-5">
+              <div className="service-item mb-5 ">
                 <i className="ti-layers"></i>
-                <h4 className="mb-3">Interface Design.</h4>
-                <p>
-                  Creating intuitive and engaging user interfaces that
-                  prioritize usability, ensuring a seamless experience for your
-                  audience.
-                </p>
+                <h4 className="mb-3">{t("interface-service")}</h4>
+                <p>{t("interface-service-description")}</p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="service-item mb-5">
                 <i className="ti-bar-chart"></i>
-                <h4 className="mb-3">Business Consulting.</h4>
-                <p>
-                  Strategic insights and solutions to optimize your operations,
-                  helping you navigate the digital landscape and achieve your
-                  business goals.
-                </p>
+                <h4 className="mb-3">{t("business-service")}</h4>
+                <p>{t("business-service-description")}</p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="service-item mb-5 mb-lg-0">
                 <i className="ti-vector"></i>
-                <h4 className="mb-3">Branding.</h4>
-                <p>
-                  Developing a strong, cohesive brand identity that resonates
-                  with your target audience and differentiates you in the
-                  marketplace.
-                </p>
+                <h4 className="mb-3">{t("Branding-service")} </h4>
+                <p>{t("Branding-service-description")}</p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="service-item mb-5 mb-lg-0">
                 <i className="ti-android"></i>
-                <h4 className="mb-3">App development.</h4>
-                <p>
-                  Innovative mobile and web applications designed to meet your
-                  business needs, with a focus on user engagement and
-                  functionality.
-                </p>
+                <h4 className="mb-3">{t("app-development-service")}</h4>
+                <p>{t("app-development-service-description")}</p>
               </div>
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="service-item mb-5 mb-lg-0">
                 <i className="ti-pencil-alt"></i>
-                <h4 className="mb-3">Content creation.</h4>
-                <p>
-                  Producing high-quality, engaging content that tells your
-                  brand's story and connects with your audience across various
-                  platforms.
-                </p>
+                <h4 className="mb-3">{t("content-service")}</h4>
+                <p>{t("content-service-description")}</p>
               </div>
             </div>
           </div>
