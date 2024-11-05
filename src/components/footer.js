@@ -54,7 +54,7 @@ export function Footer() {
               <div className="col-lg-6">
                 <div className="copyright">
                   {t("copyright")} &copy; {t("developed-by")}
-                  <Link to="https://sbsa-solutions.web.app/">
+                  <Link to="https://sbsa-solutions.web.app/" className="ml-2">
                     SBSA<span className="text-color">Solutions.</span>
                   </Link>
                 </div>

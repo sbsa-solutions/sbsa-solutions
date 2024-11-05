@@ -9,10 +9,10 @@ import data from "../data";
 export function Layout() {
   return (
     <>
-      {/* <Header></Header>
+      <Header></Header>
       <Outlet />
-      <Footer></Footer>*/}
-      <CommingSoon />
+      <Footer></Footer>
+      {/* <CommingSoon />*/}
     </>
   );
 }
