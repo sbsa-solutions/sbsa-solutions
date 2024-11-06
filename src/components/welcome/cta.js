@@ -19,7 +19,7 @@ export function CTASection() {
                   <br /> {t("description-2")}
                 </p>
                 <span className="h6 text-color">
-                  <i className="ti-email mr-2"></i>
+                  <i className="ti-email mr-3"></i>
                   <Link
                     to="mailto:sbsa.business.solutions@gmail.com"
                     className="text-color"
@@ -27,9 +27,11 @@ export function CTASection() {
                     sbsa.business.solutions@gmail.com
                   </Link>
                 </span>
-                {/*<h3>
+                <br />
+                <span className="h6 text-color">
                   <i className="ti-mobile mr-3 text-color"></i>+216 22 605 020
-                </h3>*/}
+                </span>
+                {/**/}
               </div>
             </div>
           </div>

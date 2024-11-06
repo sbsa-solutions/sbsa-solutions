@@ -43,9 +43,12 @@ export function Footer() {
                     sbsa.business.solutions@gmail.com
                   </Link>
                 </h6>
-                {/** <Link to="tel:+23-345-67890">
+                <i className="ti-mobile mr-2"></i>
+                <Link to="tel:+216-22605020">
                   <span className="text-color h4">+216 22 605 020</span>
-                </Link> */}
+                </Link>
+
+                {/***/}
               </div>
             </div>
           </div>
