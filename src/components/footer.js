@@ -38,7 +38,8 @@ export function Footer() {
                   </h3>
                 </div>
                 <h6>
-                  <Link to="mailto:support@gmail.com">
+                  <i className="ti-email mr-2"></i>
+                  <Link to="mailto:sbsa.business.solutions@gmail.com">
                     sbsa.business.solutions@gmail.com
                   </Link>
                 </h6>

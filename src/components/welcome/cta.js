@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 export function CTASection() {
   const { t } = useTranslation("translation", {
     keyPrefix: "welcome.cta",
@@ -17,10 +18,15 @@ export function CTASection() {
                   {t("description-1")}
                   <br /> {t("description-2")}
                 </p>
-                <h3>
-                  <i className="ti-email mr-3 text-color"></i>
-                  sbsa.business.solutions@gmail.com
-                </h3>
+                <span className="h6 text-color">
+                  <i className="ti-email mr-2"></i>
+                  <Link
+                    to="mailto:sbsa.business.solutions@gmail.com"
+                    className="text-color"
+                  >
+                    sbsa.business.solutions@gmail.com
+                  </Link>
+                </span>
                 {/*<h3>
                   <i className="ti-mobile mr-3 text-color"></i>+216 22 605 020
                 </h3>*/}
