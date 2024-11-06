@@ -86,6 +86,12 @@ export function Contact() {
 
       <section className="contact-form-wrap section">
         <div className="container">
+          <ToastNotification
+            message={toastMessage}
+            show={showToast}
+            onClose={() => setShowToast(false)}
+            type={toastType}
+          />
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <form
@@ -128,19 +134,12 @@ export function Contact() {
                   {t("send-message")}
                 </button>
               </form>
-              <ToastNotification
-                message={toastMessage}
-                show={showToast}
-                onClose={() => setShowToast(false)}
-                type={toastType}
-              />
             </div>
 
             <div className="col-lg-5 col-sm-12">
               <div className="contact-content pl-lg-5 mt-5 mt-lg-0">
                 <span className="text-muted">{t("professionals-title")}</span>
                 <h2 className="mb-5 mt-2">{t("professionals-description")}</h2>
-
                 <ul className="address-block list-unstyled">
                   <li>
                     <i className="ti-direction mr-3"></i>
@@ -150,12 +149,12 @@ export function Contact() {
                     <i className="ti-email mr-3"></i>
                     sbsa.business.solutions@gmail.com
                   </li>
-                  <li>
+                  {/* <li>
                     <i className="ti-mobile mr-3"></i>
                     +216 22 605 020
-                  </li>
+                  </li> */}
                 </ul>
-
+                {/** {" "}
                 <ul className="social-icons list-inline mt-5">
                   <li className="list-inline-item">
                     <Link
@@ -181,7 +180,15 @@ export function Contact() {
                       <i className="fab fa-youtube"></i>
                     </Link>
                   </li>
-                </ul>
+                  <li className="list-inline-item">
+                    <Link
+                      to="https://www.tiktok.com/@sbsa.solutions"
+                      target="_blank"
+                    >
+                      <i className="fab fa-tiktok"></i>
+                    </Link>
+                  </li>
+                </ul>*/}
               </div>
             </div>
           </div>

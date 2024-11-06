@@ -6,12 +6,6 @@ const ToastNotification = ({ message, show, onClose, type = "success" }) => {
     <div className="mt-2">
       <Alert show={show} variant={type}>
         <p>{message}</p>
-        <hr />
-        <div className="d-flex justify-content-end">
-          <Button onClick={() => onClose()} variant="outline-danger">
-            Close
-          </Button>
-        </div>
       </Alert>
     </div>
   );

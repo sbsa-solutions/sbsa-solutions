@@ -42,13 +42,13 @@ export function Footer() {
                     sbsa.business.solutions@gmail.com
                   </Link>
                 </h6>
-                <Link to="tel:+23-345-67890">
+                {/** <Link to="tel:+23-345-67890">
                   <span className="text-color h4">+216 22 605 020</span>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
-
+          {/***/}{" "}
           <div className="footer-btm pt-4">
             <div className="row">
               <div className="col-lg-6">
@@ -59,7 +59,7 @@ export function Footer() {
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-6 text-left text-lg-right">
+              {/*  <div className="col-lg-6 text-left text-lg-right">
                 <ul className="list-inline footer-socials">
                   <li className="list-inline-item">
                     <Link
@@ -85,8 +85,17 @@ export function Footer() {
                       <i className="fab fa-instagram mr-2"></i>Instagram
                     </Link>
                   </li>
+                  <li className="list-inline-item">
+                    <Link
+                      to="https://www.tiktok.com/@sbsa.solutions"
+                      target="_blank"
+                    >
+                      <i className="fab fa-tiktok mr-2"></i>TikTok
+                    </Link>
+                  </li>
                 </ul>
               </div>
+              */}
             </div>
           </div>
         </div>
