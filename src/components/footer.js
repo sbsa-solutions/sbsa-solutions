@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import PhoneNumber from "./Phone-Number";
 
 export function Footer() {
   const { t } = useTranslation("translation", {
@@ -45,7 +46,9 @@ export function Footer() {
                 </h6>
                 <i className="ti-mobile mr-2"></i>
                 <Link to="tel:+216-22605020">
-                  <span className="text-color h4">+216 22 605 020</span>
+                  <span className="text-color h4">
+                    <PhoneNumber />
+                  </span>
                 </Link>
 
                 {/***/}

@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import PhoneNumber from "../Phone-Number";
 export function CTASection() {
   const { t } = useTranslation("translation", {
     keyPrefix: "welcome.cta",
@@ -29,7 +30,8 @@ export function CTASection() {
                 </span>
                 <br />
                 <span className="h6 text-color">
-                  <i className="ti-mobile mr-3 text-color"></i>+216 22 605 020
+                  <i className="ti-mobile mr-3 text-color"></i>
+                  <PhoneNumber />
                 </span>
                 {/**/}
               </div>

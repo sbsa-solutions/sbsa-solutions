@@ -151,7 +151,7 @@ export function Contact() {
                   </li>
                   {/* <li>
                     <i className="ti-mobile mr-3"></i>
-                    +216 22 605 020
+                    <PhoneNumber />
                   </li> */}
                 </ul>
                 {/** {" "}

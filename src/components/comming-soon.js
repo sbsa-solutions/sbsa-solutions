@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import PhoneNumber from "./Phone-Number";
 
 export function CommingSoon() {
   const { t } = useTranslation("translation", {
@@ -47,7 +47,7 @@ export function CommingSoon() {
                   </li>
                   <li>
                     <i class="ti-mobile mr-3"></i>
-                    {t("phone")}: +216 22 605 020
+                    {t("phone")}: <PhoneNumber />
                   </li>
                 </ul>
               </div>
