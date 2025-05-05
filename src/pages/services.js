@@ -100,7 +100,7 @@ export function Services() {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="service-item mb-5">
                 <i className="ti-pencil-alt"></i>
-                <h4 className="mb-3">{t("content-creaction")}</h4>
+                <h4 className="mb-3">{t("content-creation")}</h4>
                 <p>{t("content-creation-desc")}</p>
               </div>
             </div>
